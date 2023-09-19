@@ -1,0 +1,25 @@
+{% #form_fieldset %}
+  {% form_legend text="Does the user have roles assigned?" class="!text-base mt-0" %}
+
+  <label class="boolean-checkbox__label" for="{{ id }}">
+    <span role="presentation" class="boolean-checkbox__button">
+      <span class="boolean_checkbox__icon">
+        <span class="boolean-checkbox__status boolean-checkbox__status--false">
+          {% icon_x_outline class="h-3 w-3 text-gray-600 stroke-[3px]" %}
+        </span>
+        <span class="boolean-checkbox__status boolean-checkbox__status--true">
+          {% icon_check_outline class="h-3 w-3 text-oxford-600 stroke-[3px]" %}
+        </span>
+      </span>
+    </span>
+    <input
+      class="boolean-checkbox__input"
+      type="checkbox"
+      name="{{ name }}"
+      id="{{ id }}"
+      checked
+    >
+    <span class="boolean-checkbox__text--false">{{ text_false }}</span>
+    <span class="boolean-checkbox__text--true">{{ text_true }}</span>
+  </label>
+{% /form_fieldset %}

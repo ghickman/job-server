@@ -1,4 +1,5 @@
 @import "_utils.css";
+@import "../../../templates/_components/form/boolean-checkbox.css";
 
 @tailwind base;
 @tailwind components;
